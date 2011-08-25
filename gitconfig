@@ -1,0 +1,28 @@
+[user]
+  name = Simon Pamies
+  email = simon.marcel.pamies@sap.com
+
+[http]
+  sslVerify = false
+  username = C5154235
+
+[alias]
+  co = checkout
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(bold)%s %Creset| %Cgreen%cr %C(white)%cn%Creset' --abbrev-commit --date=relative
+  md = !"git co develop && git pull && git co master && git pull && git merge develop && git push && git co develop" 
+  mp = !"git co develop && git pull && git co preview && git pull && git merge develop && git push && git co develop" 
+  st = status
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+
+[branch]
+  autosetuprebase = always
+
+[push]
+  default = current
+
+[core]
+  excludesfile = $HOME/.gitignore
