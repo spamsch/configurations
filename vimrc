@@ -91,3 +91,6 @@ let g:Imap_FreezeImap = 1
 
 let g:SuperTabDefaultCompletionType = "context"
 
+set noswapfile
+set ttyfast
+
