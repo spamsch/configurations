@@ -1,3 +1,6 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 iabbr Pdb import pdb;pdb.set_trace()
 
 set bdir=/tmp
@@ -59,6 +62,9 @@ autocmd BufEnter *.upt,*.html,*.pt,*.zpt,*.dtml,*.cpt,index_html :set syntax=htm
 autocmd BufEnter *.js,*.js.dtml :set syntax=javascript
 autocmd BufEnter *.py,*.cpy,*.xpy :set syntax=python
 autocmd BufEnter *.xml,*.zcml :set syntax=xml
+
+autocmd FileType pt,cpt,zpt,html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
+autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
 
 " buffer navigation
 map ,n :bp<CR>
