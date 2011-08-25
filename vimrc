@@ -88,3 +88,6 @@ map ,s :nohlsearch<CR>
 " latex stuff - do not show completions like <++>
 let g:Imap_UsePlaceHolders = 0
 let g:Imap_FreezeImap = 1
+
+let g:SuperTabDefaultCompletionType = "context"
+

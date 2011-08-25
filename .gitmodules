@@ -10,3 +10,6 @@
 [submodule "vim/bundle/supertab"]
 	path = vim/bundle/supertab
 	url = https://github.com/vim-scripts/SuperTab-continued..git
+[submodule "vim/bundle/better-css-syntax"]
+	path = vim/bundle/better-css-syntax
+	url = https://github.com/ChrisYip/Better-CSS-Syntax-for-Vim
