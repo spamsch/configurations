@@ -1,1 +1,6 @@
-Place for configurations
+Place for various configurations
+
+Initialize with:
+- git submodule init
+- git submodule update
+- git submodule status
