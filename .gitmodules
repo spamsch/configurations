@@ -13,3 +13,6 @@
 [submodule "vim/bundle/better-css-syntax"]
 	path = vim/bundle/better-css-syntax
 	url = https://github.com/ChrisYip/Better-CSS-Syntax-for-Vim
+[submodule "vim/bundle/vim-latex"]
+	path = vim/bundle/vim-latex
+	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex

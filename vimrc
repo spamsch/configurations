@@ -40,8 +40,8 @@ syntax enable
 colorscheme desert
 
 if has("gui_running")
-    set columns=180
-    set lines=50
+    "set columns=180
+    "set lines=50
     let g:Tlist_Inc_Winwidth=0
     set path+=**
     colorscheme default
@@ -86,10 +86,13 @@ map ,c :s/^\/\/\\|^--\\|^> \\|^[#"]//<CR>:nohlsearch<CR>
 map ,s :nohlsearch<CR>
 
 " latex stuff - do not show completions like <++>
-let g:Imap_UsePlaceHolders = 0
-let g:Imap_FreezeImap = 1
+let g:Imap_UsePlaceHolders = 1
+let g:Imap_FreezeImap = 0
 
 let g:SuperTabDefaultCompletionType = "context"
+
+iab ,s \begin{}<Esc>i
+iab ,e \end{}<Esc>i
 
 set noswapfile
 set ttyfast
