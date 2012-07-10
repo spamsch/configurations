@@ -86,10 +86,12 @@ map ,c :s/^\/\/\\|^--\\|^> \\|^[#"]//<CR>:nohlsearch<CR>
 map ,s :nohlsearch<CR>
 
 " latex stuff - do not show completions like <++>
-let g:Imap_UsePlaceHolders = 1
+let g:Imap_UsePlaceHolders = 0
 let g:Imap_FreezeImap = 0
 
 let g:SuperTabDefaultCompletionType = "context"
+let g:Tex_CompileRule_dvi = 'pdflatex --interaction=nonstopmode $*'
+let g:Tex_DefaultTargetFormat = "pdf"
 
 iab ,s \begin{}<Esc>i
 iab ,e \end{}<Esc>i
