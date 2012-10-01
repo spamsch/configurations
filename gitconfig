@@ -27,3 +27,4 @@
 [core]
   excludesfile = $HOME/.gitignore
   quotepath = off
+	excludefiles = /home/web/.gitignore
